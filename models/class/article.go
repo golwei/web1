@@ -2,8 +2,6 @@ package class
 
 import (
 	"time"
-
-	"github.com/astaxie/beego/orm"
 )
 
 //type Article struct {
