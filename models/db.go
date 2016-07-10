@@ -12,7 +12,7 @@ func init() {
 	orm.RegisterDriver("sqlite3", orm.DRSqlite)
 	orm.RegisterDataBase("default", "sqlite3", "a.db")
 
-	orm.RegisterModel(new(User))
+	orm.RegisterModel(new(User), new(Article))
 	_ = orm.RunSyncdb("default", false, true)
 
 }
