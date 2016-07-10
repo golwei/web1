@@ -7,7 +7,7 @@ import (
 type Article struct {
 	Id      int
 	Title   string
-	Content string `orm:"type(text)"`
+	Content string `orm:"type(text)`
 	Author  *User
 	Replys  int
 	Views   int
